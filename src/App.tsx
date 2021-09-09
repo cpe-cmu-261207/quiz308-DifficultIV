@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Head from './components/Header';
+import Comments from './components/comment';
 
 function App() {
   return (
@@ -9,24 +11,25 @@ function App() {
       <div className="mx-auto max-w-2xl bg-gray-800 rounded-md shadow p-4 space-y-2 divide-y">
 
         {/* ส่วนของเจ้าของ post */}
-        <div className="space-y-2">
+        {/* <div className="space-y-2"> */}
 
           {/* image and name */}
-          <div className="flex space-x-2 items-center">
-            <img className="w-12 h-12 rounded-full" src="/profileImages/handsome.jpg"></img>
-            <span className='font-semibold text-lg text-white'>Chayanin Suatap 610631100</span>
-          </div>
+          {/* <div className="flex space-x-2 items-center">
+            <img className="w-12 h-12 rounded-full" src="/profileImages/Kitpisan.jpg"></img>
+            <span className='font-semibold text-lg text-white'>Kitpisan Tan-ngan 630610716</span>
+          </div> */}
 
           {/* status message */}
-          <p className='text-white'>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</p>
+          {/* <p className='text-white'>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</p> */}
 
           {/* like section */}
-          <div className='flex items-center'>
+          {/* <div className='flex items-center'>
             <img className='w-4 h-4 mr-1' src='/like.svg'></img>
             <p className='text-gray-300'>100 คน</p>
           </div>
 
-        </div>
+        </div> */}
+        <Head/>
 
         {/* comments section */}
         <div className="">
@@ -44,6 +47,8 @@ function App() {
               </div>
             </div>
           </div>
+          {/* <Comments/> */}
+          
 
           {/* replies */}
           {/* ต่างกันตรงที่มี padding มากกว่าเท่านั้น (pl-14) */}
